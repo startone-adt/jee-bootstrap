@@ -1,12 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <!-- =============== -->
+    <!-- PROJECT SECTION -->
+    <!-- =============== -->
     <parent>
         <groupId>com.github.adt.startone</groupId>
-        <artifactId>jee-bootstrap</artifactId>
+        <artifactId>sbb-dashboard</artifactId>
         <version>1.0.0</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>jee-bootstrap-presentation</artifactId>
-    <name>Jakarta EE 10 With Bootstrap Presentation Layer</name>
+    <artifactId>sbb-dashboard-presentation</artifactId>
+    <name>Spring Boot With Bootstrap Dashboard Presentation Layer</name>
 </project>
