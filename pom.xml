@@ -6,7 +6,7 @@
     <!-- =============== -->
     <!-- PROJECT SECTION -->
     <!-- =============== -->
-    <groupId>com.github.startone</groupId>
+    <groupId>com.github.adt.startone</groupId>
     <artifactId>jee-bootstrap</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
@@ -16,10 +16,10 @@
     <!-- PROPERTIES SECTION -->
     <!-- ================== -->
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.report.sourceEncoding>UTF-8</project.report.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <!-- ==================== -->
@@ -46,7 +46,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.13.0</version>
+                    <version>3.14.0</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
@@ -60,10 +60,11 @@
                 <plugin>
                     <groupId>org.wildfly.plugins</groupId>
                     <artifactId>wildfly-maven-plugin</artifactId>
-                    <version>4.2.2.Final</version>
+                    <version>5.1.2.Final</version>
                     <configuration>
-                        <version>33.0.1.Final</version><!-- 使用する WildFly のバージョン。省略時は最新の安定バージョンが自動選択される -->
+                        <debug>true</debug><!-- デバッグを有効にするなら true -->
                         <server-config>standalone-full.xml</server-config><!-- 使用する WildFly サーバ構成のパス -->
+                        <version>35.0.1.Final</version><!-- 使用する WildFly のバージョン。省略時は最新の安定バージョンが自動選択される -->
                     </configuration>
                 </plugin>
             </plugins>
